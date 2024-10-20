@@ -2,15 +2,18 @@
   "name": "ecommerce-api",
   "version": "1.0.0",
   "main": "index.js",
-  "type" : "module",
+  "type": "module",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "node --import=tsx --watch src/index.ts",
+    "build" : "tsc"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "description": "",
   "dependencies": {
+    "dotenv": "^16.4.5",
     "express": "^4.21.1"
   },
   "devDependencies": {
