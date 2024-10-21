@@ -1,11 +1,10 @@
 
 import { Router } from "express"
+import { listProducts } from "./productsController"
 
 //Product Endpoints
 const router = Router()
 
-router.get('/', (req,res) =>{
-    res.send('List of pruductus')
-})
+router.get('/' ,listProducts )
 
 export default router;
